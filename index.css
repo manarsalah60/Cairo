@@ -1,0 +1,104 @@
+/* Start Variables */
+:root{    
+    --text-main-color:#1E1E1E;
+    --text-soft-color:rgb(22 , 26 , 29 , 85%);
+    --Dark-red-color:#660708;
+    --Bright-Beige-color:#F8F5F0;
+    --Bright-Beige-colo:#F5E6D3;
+    --Bright-gray-color: #D3D3D3;
+    --White-color:#ffffff;
+    --hr-color: goldenrod ;
+
+}
+/* End Variables */
+/* start rules  */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth ;
+}
+body {
+    font-family: "Playfair Display", serif;
+}
+.container {
+    padding-left: 64px;
+    padding-right: 64px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul {
+    list-style: none;
+}
+
+/* end rules  */
+/* * Start Project */
+/* start header */
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    background-color: var(--Bright-Beige-color);
+}
+.header a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+.header a:hover {
+    color: var(--White-color);
+    text-shadow: 1px 1px 10px var(--text-main-color);
+}
+.header .active {
+    margin-left: 300px;
+}
+.header h2 {
+    color: black;
+    margin: 10px 0px;
+    font-weight: 900;
+    font-size: 40px;
+}
+/* end header */
+/* start tittle */
+.tittle {
+    position: relative;
+    height: 600px;
+    background-image: url('./imgs/CAIRO\ UNIVERSITY.jpeg'); 
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    overflow: hidden;
+}
+
+.tittle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 35%);
+    z-index: 1;
+}
+.tittle a {
+    position: relative;
+    color: var(--Bright-gray-color);
+    transition: font-size 1s ease ;
+    text-decoration: none;
+    font-size: 34px;
+    z-index: 2;
+}
+.tittle a:hover {
+    font-size: 50px;
+    text-shadow: 1px 1px 10px var(--White-color);
+}
+/* end tittle */
+/* * End Project */
